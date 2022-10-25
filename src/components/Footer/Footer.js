@@ -12,7 +12,7 @@ const Footer = () => {
 
        <div className='impressum'>
         Impressum
-        <button onClick='topFunction()' className='arrow-button'>
+        <button className='arrow-button'>
             Back<span class='arrow'>
 
             </span>
