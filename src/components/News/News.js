@@ -1,8 +1,23 @@
 import React from 'react'
+import FetchData from './FetchData'
 
-const News = () => {
+const News = ({news, setNews}) => {
+
+  console.log(news)
+
+  const generateNewsList = 
+    
+    news.map((item) => {
+      console.log(item.title)
+    })
+ 
+  
+
   return (
-    <div>News</div>
+    <>
+    {generateNewsList} 
+    <h1> Hallo </h1>
+    </>
   )
 }
 

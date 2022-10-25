@@ -1,0 +1,11 @@
+.main {
+    height: 1000px;
+}
+
+.main-searchbar {
+    margin-top: 30px
+}
+
+.main-list {
+    margin: 100px auto ; 
+}
