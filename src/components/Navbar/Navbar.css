@@ -1,0 +1,33 @@
+#navbar{
+    height:50px;
+    width:90%;
+    border: 1px solid orange;
+    margin: auto;
+}
+#navbar{
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+#navbar a{
+    color:white;
+    text-decoration: none;
+    transition-property:border-bottom;
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    text-transform: uppercase;
+    ;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding:0px;
+}
+
+a:hover{
+    border-bottom:5px solid orange;
+
+}
