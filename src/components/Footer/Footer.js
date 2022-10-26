@@ -3,6 +3,7 @@ import './Footer.css'
 import {useEffect} from 'react';
 
 
+
 const Footer = () => {
 
   useEffect(() => {
@@ -18,10 +19,17 @@ const Footer = () => {
        </div>
 
        <div className='impressum'>
-        Impressum
+        
+        Copyright ©
+
+        <div>WDG007</div>
+        
         <button onClick={() =>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}} className='arrow-button'>    
-              Back<span class='arrow'></span>
+              Back<span className='arrow'></span>
         </button>
+
+          
+
        </div>
 
        
