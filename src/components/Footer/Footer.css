@@ -1,5 +1,5 @@
 .footer{
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: rgba(0, 0, 0, 0.754);
     display: flex;
     justify-content: center;
     color: #EE8C3A;
@@ -8,7 +8,7 @@
 }
 
 .impressum{
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: rgba(0, 0, 0, 0.754);
     display: flex;
     justify-content: space-around;
     color: #EE8C3A;
@@ -20,7 +20,7 @@
 
 .arrow-button {
     display: flex;
-    color: #C2FFE9;
+    color: #ffffff;
     background-color: #EE8C3A;
     padding: 10px 16px;
     border-radius: 20px;
@@ -36,8 +36,8 @@
 .arrow-button > .arrow {
     width: 6px;
     height: 6px;
-    border-right: 2px solid #C2FFE9;
-    border-bottom: 2px solid #C2FFE9;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
     position: relative;
     transform: rotate(-135deg);
     margin: 0 6px;
