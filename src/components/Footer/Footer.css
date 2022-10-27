@@ -1,0 +1,76 @@
+.footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    color: #EE8C3A;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.impressum{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    color: #EE8C3A;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 1.75rem;
+    
+}
+
+.arrow-button {
+    display: flex;
+    color: #ffffff;
+    background-color: #EE8C3A;
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+.arrow-button > .arrow {
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    position: relative;
+    transform: rotate(-135deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+}
+
+.arrow-button > .arrow::before {
+    display: block;
+    background-color: currentColor;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(0px / 0);
+    
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.arrow-button:hover > .arrow {
+    
+    border-color: text-hover-color;
+}
+
+.arrow-button:hover > .arrow::before {
+    opacity: 1;
+    width: 8px;
+}
+
+.arrow-button:hover {
+    background-color: #000000;
+    color: #fff;
+}
+	
