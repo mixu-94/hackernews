@@ -5,8 +5,7 @@ const SearchFeature = () => {
   return (
     <div id="search-div">
         <input type="text" name="input" placeholder='search for articles . . .'></input>
-        <button>Search</button>
-        
+        <button>Search</button>  
     </div>
   )
 }

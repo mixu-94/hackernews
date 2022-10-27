@@ -12,7 +12,7 @@ img{
   cursor: pointer;
   margin-left:50px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
 
   .animated-icon1 span {
     background: orange;
@@ -22,7 +22,6 @@ img{
   }
   #headerdiv > section{
     display: none;
-
 
   }
 
@@ -56,7 +55,7 @@ body{
   width: 30px;
   height: 20px;
   position: relative;
-  margin: 0px -50px 0px 50px;
+  margin: 0px 0px 0px 0px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -144,5 +143,13 @@ body{
 #headerdiv > section > div > div > button:nth-child(5)
  {
   color:black;
+
 }
+
+#headerdiv > section > div > div {
+  padding: 10px 0px;
+  margin-left:-40px;
+  margin-right:60px;
+}
+
 

@@ -32,17 +32,10 @@ function displayData(){
 
     <div id="main">
     <SearchFeature />
+    <br></br>
     <h1 id="hackernews">Neues aus der IT-Welt</h1>
     <br></br>
     <FetchData />
-
-
-    <div id="container-data">
-
-
-
-    </div>
-
     </div>
 
   )

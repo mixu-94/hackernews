@@ -9,9 +9,18 @@ const FetchData = () => {
     const [isLoading, setIsLoading] = useState(false)
 
 
-    const newsarray = hackernews.hits
+    function async(){
+      
+      setIsLoading(true)
 
-    
+      setTimeout(() => {
+
+      const newsarray =  hackernews.title
+
+      setIsLoading(false)
+    }, 2000)
+    } 
+
 
     // function getData() {
 
@@ -29,18 +38,28 @@ const FetchData = () => {
 
         // getData();
         setNews(hackernews.hits)
+        async();
+
 
                 
         }, [])
 
         console.log(news)
 
-     
+
+        if(isLoading){
+          return(
+
+
+            <h1>data loading ...</h1>)
+
+        }
+        
          
 
   return (
     <>
-     <Searchbar/>
+     <Searchbar/>    
      <News news={news} setNews={setNews} /> 
      </>
   )
