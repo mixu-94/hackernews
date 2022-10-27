@@ -3,21 +3,32 @@
     margin:20px;
     cursor: pointer;
     display: inline;
+}
+img{
+  text-align: center;
+  height:250px;
+  width:250px;
+  margin:-30px 20px;
+  cursor: pointer;
+  margin-left:50px;
+}
+@media only screen and (min-width: 600px) {
 
+  #burgerMenu{
+    display: none;
+}
+img{
+  margin:0px;
 }
 
-  img{
-    text-align: center;
-    height:250px;
-    width:250px;
-    margin:-50px 20px;
-    cursor: pointer;
-    margin-left:50px;
-
-  }
+}
 
 #headerdiv{
     display:flex;
     justify-content: center;
+}
+
+h1{
+  color:white;
 }
 

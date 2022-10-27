@@ -1,24 +1,31 @@
 #navbar{
+    color:white;
+    display: flex;
+    flex-direction: column;
     height:50px;
     width:90%;
     border: 1px solid orange;
     margin: auto;
 }
+@media only screen and (max-width: 600px) {
 #navbar{
-    color:white;
-    display: flex;
-    flex-direction: column;
+    display:none;
 }
+}
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display:block;
+    }
+    }
+
+
 #navbar a{
     color:white;
     text-decoration: none;
     transition-property:border-bottom;
-
     transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
     text-transform: uppercase;
-    ;
-
 }
 
 ul{
@@ -29,5 +36,4 @@ ul{
 
 a:hover{
     border-bottom:5px solid orange;
-
 }

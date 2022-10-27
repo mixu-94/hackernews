@@ -1,0 +1,38 @@
+#search-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+#search-div input{
+    padding:10px;
+    width:80%;
+    font-size:1.1rem;
+    border-radius: 2px;
+
+}
+
+#search-div button{
+    cursor:pointer;
+    background-color: orange;
+    color:black;
+    border-radius: 2px;
+}
+
+#search-div button:hover{
+    cursor:pointer;
+    background-color: rgb(171, 112, 3);
+    color:white;
+}
+
+h1#hackernews{
+    text-align: center;
+}
+
+#container-data{
+    border:1px solid white;
+    width:80%;
+    height:60vh;
+    margin:auto;
+}
