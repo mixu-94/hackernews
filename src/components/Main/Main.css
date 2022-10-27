@@ -1,8 +1,3 @@
-
-.main {
-    height: 1000px;
-}
-
 .main-searchbar {
     margin-top: 30px
 }
@@ -43,9 +38,9 @@ h1#hackernews{
     text-align: center;
 }
 
-#container-data{
+/* #container-data{
     border:1px solid white;
     width:80%;
     height:60vh;
     margin:auto;
-}
+} */
