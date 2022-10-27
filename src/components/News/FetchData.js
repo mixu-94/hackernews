@@ -54,7 +54,7 @@ const FetchData = () => {
         if(isLoading){
           return(
           <Box style={{}}>
-            <CircularProgress style={{color:"orange", margin:"50%"}}/>
+            <CircularProgress style={{color:"orange", margin:"40%"}}/>
           </Box>
 
 
