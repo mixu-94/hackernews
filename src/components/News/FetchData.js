@@ -2,16 +2,21 @@ import React, {useState, useEffect} from 'react'
 import hackernews from '../../constants/hackernews.json'
 import News from './News'
 import Searchbar from '../Searchbar/Searchbar'
+import SearchFeature from '../Main/SearchFeature'
 
 const FetchData = () => {
 
+    const DEFAULT_URL= "http://hn.algolia.com/api/v1/items/:id";
+
     const [news, setNews] = useState([]);
     const [isLoading, setIsLoading] = useState(false)
+    const [searchdata, setSearchdata] = useState(DEFAULT_URL)
 
 
-    const newsarray = hackernews.hits
-
+    // const newsarray = hackernews.hits
     
+
+  
 
     // function getData() {
 
@@ -33,17 +38,21 @@ const FetchData = () => {
                 
         }, [])
 
-        console.log(news)
+  
 
-     
+   useEffect(() => {
+      // getData(); 
+      return (
+        <>
+    
+         <SearchFeature searchdata={searchdata} setSearchdata={setSearchdata} />
+         <News news={news} setNews={setNews} /> 
+        </> 
+      )
+   }, [searchdata])  
          
 
-  return (
-    <>
-     <Searchbar/>
-     <News news={news} setNews={setNews} /> 
-     </>
-  )
+  
 }
 
 export default FetchData
