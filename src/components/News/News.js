@@ -1,5 +1,7 @@
 import React from 'react'
 import FetchData from './FetchData'
+import Single from './Single'
+import './News.css'
 
 const News = ({news, setNews}) => {
 
@@ -8,15 +10,17 @@ const News = ({news, setNews}) => {
   const generateNewsList = 
     
     news.map((item) => {
-      console.log(item.title)
+    
+
+      return <Single key={item.objectID} title={item.title} url={item.url} createdat={item.created_at} author={item.author} />
     })
  
   
 
   return (
     <>
+    <div className='news-list'> </div>
     {generateNewsList} 
-    <h1> Hallo </h1>
     </>
   )
 }

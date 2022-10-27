@@ -1,0 +1,20 @@
+.news-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 15px 30px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.205);
+}
+
+.news-title {
+    display: flex;
+    justify-content: flex-start;
+    background-color: beige;
+    margin-left: 50px;
+}
+.news-author {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(198, 198, 17);
+    margin-left: 50px;
+}

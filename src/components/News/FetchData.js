@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import hackernews from '../../constants/hackernews.json'
 import News from './News'
+import Searchbar from '../Searchbar/Searchbar'
 
 const FetchData = () => {
 
@@ -38,7 +39,10 @@ const FetchData = () => {
          
 
   return (
+    <>
+     <Searchbar/>
      <News news={news} setNews={setNews} /> 
+     </>
   )
 }
 
