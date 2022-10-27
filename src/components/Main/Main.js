@@ -1,16 +1,47 @@
-import React from 'react'
+
+import React, {useEffect, useState} from 'react'
+import SearchFeature from './SearchFeature'
 import './Main.css'
-import FetchData from '../News/FetchData'
+import dataJSON from '../../constants/hackernews.json'
+
+
+
 
 const Main = () => {
-  return (
-    <div className='main'>
-        
-        <input className='main-searchbar' type="text" placeholder='Search...'></input>
 
-        <p className='main-list'> Liste mit News</p>
-        <FetchData/>
+//test ob die Daten da sind
+ console.table(dataJSON.hits);
+
+function displayData(){
+
+    return <div data={dataJSON.hits}></div>
+
+}
+
+
+
+   /* if(loading) {
+
+        return <h1>insert spinner here ... </h1>
+    }*/
+
+
+
+  return (
+
+    <div id="main">
+    <SearchFeature />
+    <h1 id="hackernews">Neues aus der IT-Welt</h1>
+
+
+    <div id="container-data">
+
+
+
     </div>
+
+    </div>
+
   )
 }
 
