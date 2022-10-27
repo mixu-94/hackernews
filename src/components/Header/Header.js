@@ -6,9 +6,11 @@ import './header.css'
 const Header = () => {
   return (
     <>
-        <BurgerMenu />
     <div id="headerdiv">
         <Logo />
+        <BurgerMenu />
+
+
     </div>
     </>
 
