@@ -5,6 +5,8 @@
     height:50px;
     width:90%;
     margin: auto;
+    margin-bottom:50px;
+
 }
 @media only screen and (max-width: 500px) {
 #navbar{
@@ -25,6 +27,8 @@
     transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
     text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom:150px;
 }
 
 ul{

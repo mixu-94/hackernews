@@ -31,9 +31,10 @@ function displayData(){
   return (
 
     <div id="main">
-    <SearchFeature />
+     <h1 id="hackernews">Neues aus der IT-Welt</h1>
     <br></br>
-    <h1 id="hackernews">Neues aus der IT-Welt</h1>
+    <SearchFeature />
+
     <br></br>
     <FetchData />
     </div>

@@ -2,6 +2,10 @@ import React, {useState, useEffect} from 'react'
 import hackernews from '../../constants/hackernews.json'
 import News from './News'
 import Searchbar from '../Searchbar/Searchbar'
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
+
+
 
 const FetchData = () => {
 
@@ -49,9 +53,18 @@ const FetchData = () => {
 
         if(isLoading){
           return(
+          <Box style={{}}>
+            <CircularProgress style={{color:"orange", margin:"50%"}}/>
+          </Box>
 
 
-            <h1>data loading ...</h1>)
+
+         /*    <h1>data loading ...</h1> 
+        */
+
+
+
+          )   
 
         }
         
@@ -59,7 +72,8 @@ const FetchData = () => {
 
   return (
     <>
-     <Searchbar/>    
+     <Searchbar/>
+    
      <News news={news} setNews={setNews} /> 
      </>
   )
