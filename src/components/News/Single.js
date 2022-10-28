@@ -1,10 +1,12 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom';
 import './Single.css'
+import { v4 as uuidv4 } from 'uuid';
 
-const Single = ({key, title, url, createdat, author}) => {
 
-  console.log(title)
+const Single = ({id, title, url, createdat, author}) => {
+
+  console.log(id)
 
   function handleClick(e){
   
@@ -14,7 +16,7 @@ const Single = ({key, title, url, createdat, author}) => {
   }
   
   return (
-    <div className='news-wrapper' onClick={handleClick} key={key}>
+    <div className='news-wrapper' onClick={handleClick} key={id}>
 
       <div className='news-url'>
       <a href={url} target="_blank"><button> Website </button></a>

@@ -54,3 +54,13 @@ h1#hackernews{
     height:60vh;
     margin:auto;
 }
+
+@media only screen and (max-width: 600px) {
+    #search-div{
+        box-sizing: border-box;
+        width: 60%;
+        margin: 0 auto;
+        min-height: 50px;
+        display: flex;
+    }
+}
