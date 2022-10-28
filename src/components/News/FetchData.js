@@ -4,13 +4,16 @@ import News from './News'
 import Searchbar from '../Searchbar/Searchbar'
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import SearchFeature from '../Main/SearchFeature';
+
 
 
 
 const FetchData = () => {
 
-    const [news, setNews] = useState([]);
-    const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+  const [news, setNews] = useState(true)
+
 
 
     function async(){

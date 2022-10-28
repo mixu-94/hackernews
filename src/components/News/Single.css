@@ -1,24 +1,29 @@
 .news-wrapper {
     display: flex;
     flex-direction: column;
+    height:auto;
     align-items: center;
-    margin: 15px 30px;
+    margin: 2vh 5% 8% 5%;
     padding: 10px;
     background-color: rgba(128, 128, 128, 0.205);
+    
 }
 
 .news-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: beige;
-    margin: 10px;
+    text-align: center;    
+    margin: 10x 0px 10px 0px;
+    padding:5px;
 
 }
 .news-author {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(198, 198, 17);
-    margin: 10px;
+    border:1px solid rgb(198, 198, 17);
+    color:white;
+    margin: 10px 0px 20px 0px;
+    padding:5px;
 
+}
+
+button{
+    margin-top:20px;
+    margin-bottom:20px;
 }
