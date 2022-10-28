@@ -10,8 +10,6 @@ import FetchData from '../News/FetchData'
 
 const Main = () => {
 
-//test ob die Daten da sind
- console.table(dataJSON.hits);
 
 function displayData(){
 
@@ -35,12 +33,6 @@ function displayData(){
     <h1 id="hackernews">Neues aus der IT-Welt</h1>
     <FetchData/>
 
-
-    <div id="container-data">
-
-
-
-    </div>
 
     </div>
 

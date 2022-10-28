@@ -55,11 +55,11 @@ const FetchData = () => {
 
    if(isLoading){
       return(
-
-
-        <CircularProgress style={{margin: "0 0 0 50%", color: "orange"}}/>)
-
-    }
+         <>
+         <SearchFeature searchdata={searchdata} setSearchdata={setSearchdata} />
+        <CircularProgress style={{margin: "50px 0 100px 50%", color: "orange"}}/>
+        </>
+    )}
          
    return (
       <>

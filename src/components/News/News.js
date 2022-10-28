@@ -8,7 +8,7 @@ import './Single.css'
 
 const News = ({news, setNews}) => {
 
-  console.log(news)
+
 
   const generateNewsList = 
     
