@@ -1,12 +1,10 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom';
 import './Single.css'
-import { v4 as uuidv4 } from 'uuid';
 
 
 const Single = ({id, title, url, createdat, author}) => {
 
-  console.log(id)
 
   function handleClick(e){
   
@@ -30,18 +28,4 @@ const Single = ({id, title, url, createdat, author}) => {
 }
 
 export default Single
-
-
-// import React from 'react'
-
-// export default function Single({key, title, url, createdat, author})  {
-
-//   console.log(title)
-  
-//   return (
-//     <div key={key}>
-//       {title}
-//     </div>
-//   )
-// }
 

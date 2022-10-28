@@ -32,7 +32,7 @@
     margin-left: 10px;
     box-sizing: border-box;
     cursor:pointer;
-    background-color: orange;
+    background-color: #EE8C3A;
     color:black;
     border-radius: 10px;
     min-height: 50px;
@@ -40,7 +40,7 @@
 
 #search-div button:hover{
     cursor:pointer;
-    background-color: rgb(171, 112, 3);
+    background-color: #EE8C3A;
     color:white;
 }
 

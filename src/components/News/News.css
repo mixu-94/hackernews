@@ -2,3 +2,13 @@
     background-color: rgb(0, 0, 0);
     height: auto;
 }
+
+.no-results {
+    margin: 20px auto;
+    text-align: center;
+    color: #EE8C3A;
+}
+
+.no-results h1 {
+    color: #EE8C3A;
+}

@@ -25,6 +25,7 @@
     justify-content: flex-start;
     margin-left: 50px;
     width: 60%;
+    font-size: larger;
 
 }
 .news-author {
@@ -51,8 +52,13 @@
     border: 3x solid black;
 }
 
+.news-createdat {
+    font-size: smaller;
+    color: grey
+}
+
 .news-author {
-    color: gray;
+    color: grey;
 }
 
 @media only screen and (max-width: 1100px) {
