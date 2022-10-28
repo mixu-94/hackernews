@@ -4,6 +4,7 @@ import News from './News'
 import Searchbar from '../Searchbar/Searchbar'
 import SearchFeature from '../Main/SearchFeature'
 import './News.css'
+import CircularProgress from '@mui/material/CircularProgress';
 
 const FetchData = () => {
 
@@ -21,16 +22,20 @@ const FetchData = () => {
 
   
 
-    function getData() {
+   function getData() {
+
+      
 
         setIsLoading(true)
+        setTimeout(() => {
 
-            fetch(searchdata) //anfragen von API um JSON zu erhalten
+             fetch(searchdata) //anfragen von API um JSON zu erhalten
                 .then(response => response.json()) //JSON format in JS Object umwandeln
                 .then(data => setNews(data.hits)) //JS Object verarbeiten z.B. console.log
 
         setIsLoading(false)
-        }
+        } , 3000)
+      }
 
 
     useEffect(() => {
@@ -48,7 +53,13 @@ const FetchData = () => {
      
    }, [searchdata])  
 
-   console.log("aus fetch" , news)
+   if(isLoading){
+      return(
+
+
+        <CircularProgress style={{margin: "0 0 0 50%", color: "orange"}}/>)
+
+    }
          
    return (
       <>
