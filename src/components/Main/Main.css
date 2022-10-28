@@ -12,30 +12,35 @@
 }
 
 #search-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 auto;
+    min-height: 50px;
 }
 
 #search-div input{
+    box-sizing: border-box;
     padding:10px;
     width:80%;
     font-size:1.1rem;
-    border-radius: 2px;
+    border-radius: 15px;
+    min-height: 50px;
 
 }
 
 #search-div button{
+    margin-left: 10px;
+    box-sizing: border-box;
     cursor:pointer;
-    background-color: orange;
+    background-color: #EE8C3A;
     color:black;
-    border-radius: 2px;
+    border-radius: 10px;
+    min-height: 50px;
 }
 
 #search-div button:hover{
     cursor:pointer;
-    background-color: rgb(171, 112, 3);
+    background-color: #EE8C3A;
     color:white;
 }
 
@@ -48,4 +53,14 @@ h1#hackernews{
     width:80%;
     height:60vh;
     margin:auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #search-div{
+        box-sizing: border-box;
+        width: 60%;
+        margin: 0 auto;
+        min-height: 50px;
+        display: flex;
+    }
 }

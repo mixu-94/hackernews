@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react'
 import SearchFeature from './SearchFeature'
 import './Main.css'
 import dataJSON from '../../constants/hackernews.json'
+import FetchData from '../News/FetchData'
 
 
 
@@ -30,8 +31,9 @@ function displayData(){
   return (
 
     <div id="main">
-    <SearchFeature />
+    
     <h1 id="hackernews">Neues aus der IT-Welt</h1>
+    <FetchData/>
 
 
     <div id="container-data">
